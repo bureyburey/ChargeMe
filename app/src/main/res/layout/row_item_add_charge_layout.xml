@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="IName"
+        android:id="@+id/tv_item_row_name_add_charge"
+        android:textColor="@color/abc_input_method_navigation_guard"
+        android:layout_alignTop="@+id/tv_item_row_quantity_add_charge"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="IQuant"
+        android:id="@+id/tv_item_row_quantity_add_charge"
+        android:textColor="@color/abc_input_method_navigation_guard"
+        android:layout_marginLeft="130dp"
+        android:layout_marginStart="130dp"
+        android:layout_alignTop="@+id/tv_item_row_price_add_charge"
+        android:layout_toRightOf="@+id/tv_item_row_price_add_charge"
+        android:layout_toEndOf="@+id/tv_item_row_price_add_charge" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="IPrice"
+        android:ems="1"
+        android:id="@+id/tv_item_row_price_add_charge"
+        android:textColor="@color/abc_input_method_navigation_guard"
+        android:layout_marginLeft="100dp"
+        android:layout_marginStart="100dp"
+        android:layout_alignTop="@+id/tv_items_amount_add_charge"
+        android:layout_toRightOf="@+id/btn_item_row_plus_add_charge"
+        android:layout_toEndOf="@+id/btn_item_row_plus_add_charge" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:textSize="26dp"
+        android:id="@+id/btn_item_row_plus_add_charge"
+        android:layout_toRightOf="@+id/tv_items_amount_add_charge"
+        android:layout_toEndOf="@+id/tv_items_amount_add_charge" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="26dp"
+        android:id="@+id/btn_item_row_minus_add_charge"
+        android:layout_alignTop="@+id/btn_item_row_plus_add_charge"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/btn_item_row_plus_add_charge" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:ems="1"
+        android:id="@+id/tv_items_amount_add_charge"
+        android:layout_alignBottom="@+id/btn_item_row_minus_add_charge"
+        android:layout_toRightOf="@+id/btn_item_row_minus_add_charge"
+        android:layout_toEndOf="@+id/btn_item_row_minus_add_charge"
+        android:textColor="@color/abc_input_method_navigation_guard"
+        android:layout_marginLeft="7dp" />
+
+</RelativeLayout>

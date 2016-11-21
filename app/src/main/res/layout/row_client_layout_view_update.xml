@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:rowCount="1"
+    android:columnCount="22"
+    android:layoutDirection="rtl"
+    android:layout_gravity="right"
+    android:longClickable="true"
+    >
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+/-"
+        android:textSize="26dp"
+        android:id="@+id/btn_add_total"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="CTotal"
+        android:id="@+id/tv_client_total"
+        android:layout_row="0"
+        android:layout_column="16"
+        android:textColor="@color/abc_input_method_navigation_guard"
+        android:layoutDirection="rtl"
+        android:layout_gravity="right"
+        android:layout_alignTop="@+id/tv_client_name"
+        android:layout_toRightOf="@+id/btn_add_total"
+        android:layout_toEndOf="@+id/btn_add_total"
+        android:longClickable="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Cname"
+        android:id="@+id/tv_client_name"
+        android:layout_row="0"
+        android:layout_column="18"
+        android:textColor="@color/abc_input_method_navigation_guard"
+        android:layoutDirection="rtl"
+        android:layout_gravity="right"
+        android:layout_alignTop="@+id/tv_client_number"
+        android:layout_centerHorizontal="true"
+        android:longClickable="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="CNum"
+        android:id="@+id/tv_client_number"
+        android:layout_row="0"
+        android:layout_column="20"
+        android:textColor="@color/abc_input_method_navigation_guard"
+        android:layoutDirection="rtl"
+        android:layout_gravity="right"
+        android:layout_alignTop="@+id/cb_is_toshav"
+        android:layout_toLeftOf="@+id/cb_is_toshav"
+        android:layout_toStartOf="@+id/cb_is_toshav"
+        android:longClickable="true"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cb_is_toshav"
+        android:layout_row="0"
+        android:layout_column="21"
+        android:clickable="false"
+        android:layoutDirection="rtl"
+        android:layout_gravity="right"
+        android:layout_alignBottom="@+id/btn_add_total"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.burey.chargeme.AddChargeActivity"
+    android:background="@drawable/background_gradient_green"
+    >
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:id="@+id/et_item_custom_add_charge"
+        android:hint="הקש סכום או מינוס לזיכוי"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/btn_item_finish"
+        android:gravity="center" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_item_add_charge"
+        android:layout_below="@+id/et_item_custom_add_charge"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="פריט"
+        android:id="@+id/tv_item_name_add_charge"
+        android:layout_below="@+id/et_item_custom_add_charge"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="כמות"
+        android:id="@+id/tv_item_quantity_add_charge"
+        android:layout_marginLeft="130dp"
+        android:layout_marginStart="130dp"
+        android:layout_alignTop="@+id/tv_item_price_add_charge"
+        android:layout_toRightOf="@+id/tv_item_price_add_charge"
+        android:layout_toEndOf="@+id/tv_item_price_add_charge" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="מחיר"
+        android:id="@+id/tv_item_price_add_charge"
+        android:layout_marginLeft="100dp"
+        android:layout_marginStart="100dp"
+        android:layout_below="@+id/btn_item_finish"
+        android:layout_toRightOf="@+id/tv_add_remove_item"
+        android:layout_toEndOf="@+id/tv_add_remove_item" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="לחיוב"
+        android:id="@+id/tv_item_to_charge_add_charge"
+        android:layout_alignTop="@+id/btn_item_finish"
+        android:layout_toLeftOf="@+id/et_item_custom_add_charge"
+        android:layout_toStartOf="@+id/et_item_custom_add_charge"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="סיים"
+        android:id="@+id/btn_item_finish"
+        android:layout_alignBaseline="@+id/et_item_custom_add_charge"
+        android:layout_alignBottom="@+id/et_item_custom_add_charge"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="הוספה/הסרה"
+        android:id="@+id/tv_add_remove_item"
+        android:layout_alignBottom="@+id/tv_item_price_add_charge"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="ClientName"
+        android:id="@+id/tv_client_name_add_charge"
+        android:layout_alignTop="@+id/et_item_custom_add_charge"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

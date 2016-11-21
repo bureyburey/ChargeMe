@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="שם לקוח"
+        android:ems="10"
+        android:id="@+id/et_new_client_name"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/abc_input_method_navigation_guard"
+        android:layoutDirection="rtl"
+        android:gravity="center"
+        android:cursorVisible="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="מספר קומונה"
+        android:ems="10"
+        android:id="@+id/et_new_client_number"
+        android:layout_gravity="center"
+        android:textColor="@color/abc_input_method_navigation_guard"
+        android:layoutDirection="rtl"
+        android:gravity="center"
+        android:cursorVisible="true"
+        android:layout_below="@+id/et_new_client_name"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="תושב"
+        android:id="@+id/cb_new_is_toshav"
+        android:layout_gravity="center"
+        android:textColor="@color/abc_input_method_navigation_guard"
+        android:layout_below="@+id/et_new_client_number"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ibtn_delete_client"
+        android:src="@drawable/delete_icon"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/et_new_client_name"
+        android:layout_alignBottom="@+id/et_new_client_number" />
+
+</RelativeLayout>

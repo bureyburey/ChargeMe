@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.burey.chargeme">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name=".MainScreenActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ChargeActivity"
+            android:label="@string/title_activity_charge"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".InventoryActivity"
+            android:label="@string/title_activity_inventory" />
+        <activity
+            android:name=".AddChargeActivity"
+            android:label="@string/title_activity_add_charge"
+            android:parentActivityName=".ChargeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.burey.chargeme.ChargeActivity" />
+        </activity>
+        <activity
+            android:name=".BrowseExcelFiles"
+            android:label="@string/title_activity_browse_excel_files" />
+        <activity android:name=".StatisticsActivity" />
+        <activity android:name=".BrowseArchive"></activity>
+    </application>
+
+</manifest>

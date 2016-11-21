@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="IName"
+        android:id="@+id/tv_item_name"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/abc_input_method_navigation_guard"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="IQuant"
+        android:id="@+id/tv_item_quantity"
+        android:textColor="@color/abc_input_method_navigation_guard"
+        android:layout_marginLeft="100dp"
+        android:layout_marginStart="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/tv_item_price"
+        android:layout_toEndOf="@+id/tv_item_price"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="IPrice"
+        android:ems="2"
+        android:id="@+id/tv_item_price"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/abc_input_method_navigation_guard"/>
+</RelativeLayout>

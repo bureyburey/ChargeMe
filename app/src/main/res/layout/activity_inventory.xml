@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.burey.chargeme.InventoryActivity"
+    android:background="@drawable/background_gradient_green"
+    >
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_search_item"
+        android:hint="חיפוש"
+        android:layout_alignBottom="@+id/btn_add_item"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/btn_add_item"
+        android:layout_toEndOf="@+id/btn_add_item" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:text="הוסף"
+        android:id="@+id/btn_add_item"
+        android:onClick="AddItem"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_inventory"
+        android:layout_below="@+id/et_search_item"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layoutDirection="rtl"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="פריט"
+        android:id="@+id/tv_item_name"
+        android:layout_below="@+id/et_search_item"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="כמות"
+        android:id="@+id/tv_item_quantity"
+        android:layout_marginLeft="80dp"
+        android:layout_marginStart="80dp"
+        android:layout_below="@+id/et_search_item"
+        android:layout_alignLeft="@+id/et_search_item"
+        android:layout_alignStart="@+id/et_search_item" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="מחיר"
+        android:id="@+id/tv_item_price"
+        android:layout_below="@+id/et_search_item"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

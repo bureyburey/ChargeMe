@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.burey.chargeme.ChargeActivity"
+    android:background="@drawable/background_gradient_green"
+
+    >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:gravity="center"
+        android:id="@+id/et_search_client"
+        android:hint="חיפוש"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/ibtn_excel_export"
+        android:layout_toEndOf="@+id/ibtn_excel_export"
+        android:layout_below="@+id/tv_charge_table_label" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="הוסף לקוח"
+        android:textSize="20dp"
+        android:id="@+id/btn_add_client"
+        android:onClick="AddClient"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/tv_name"
+        android:layout_alignTop="@+id/tv_charge_table_label_name" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="דפי חיוב"
+        android:textSize="20dp"
+        android:id="@+id/btn_change_charge_table"
+        android:onClick="SetChargeTable"
+        android:layout_toRightOf="@+id/btn_add_client"
+        android:layout_toEndOf="@+id/btn_add_client"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_above="@+id/tv_name"
+        android:layout_alignTop="@+id/ibtn_excel_export" />
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ibtn_excel_export"
+        android:src="@drawable/excel_icon"
+        android:scaleType="fitXY"
+        android:onClick="ExportToExcel"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_toRightOf="@+id/btn_change_charge_table"
+        android:layout_alignBottom="@+id/btn_add_client"
+        android:layout_alignTop="@+id/tv_charge_table_label_name" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_charges"
+        android:layoutDirection="rtl"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="שם"
+        android:id="@+id/tv_name"
+        android:layout_below="@+id/et_search_client"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="חיוב"
+        android:id="@+id/tv_charge"
+        android:layout_above="@+id/lv_charges"
+        android:layout_toLeftOf="@+id/btn_change_charge_table"
+        android:layout_toStartOf="@+id/btn_change_charge_table" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="תושב"
+        android:id="@+id/tv_toshav"
+        android:layout_below="@+id/et_search_client"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="מספר"
+        android:id="@+id/tv_client_number"
+        android:layout_above="@+id/lv_charges"
+        android:layout_alignLeft="@+id/tv_charge_table_label"
+        android:layout_alignStart="@+id/tv_charge_table_label" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="טבלת חיוב: "
+        android:textSize="20dp"
+        android:id="@+id/tv_charge_table_label"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="TableName"
+        android:textSize="20dp"
+        android:id="@+id/tv_charge_table_label_name"
+        android:layout_alignTop="@+id/tv_charge_table_label"
+        android:layout_toLeftOf="@+id/tv_charge_table_label"
+        android:layout_toStartOf="@+id/tv_charge_table_label" />
+
+</RelativeLayout>
