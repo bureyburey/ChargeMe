@@ -1,15 +1,15 @@
 # ChargeMe
-ChargeMe is an android application to manage stock and charges list of the Mid-Bar pub in kibbutz shoval
-
-key-features:
-manage stock:
-  assign prices of each item
-  assign quantities of each item
-  update prices/quantities of items
-manage charges:
-  create charges lists
-  add clients to the list
-  add/update charges for client
-charge lists:
-  generate .xml files from the database
+ChargeMe is an android application to manage stock and charges list of the Mid-Bar pub in kibbutz shoval__
+__
+key-features:__
+manage stock:__
+  assign prices of each item__
+  assign quantities of each item__
+  update prices/quantities of items__
+manage charges:__
+  create charges lists__
+  add clients to the list__
+  add/update charges for client__
+charge lists:__
+  generate .xml files from the database__
   quick send .xml files to an eMail
