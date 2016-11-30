@@ -3,7 +3,7 @@ ChargeMe is an android application to manage stock and charges list of the Mid-B
   
 key-features:  
 manage stock:  
-  assign prices of each item  
+    assign prices of each item  
   assign quantities of each item  
   update prices/quantities of items  
 manage charges:  
